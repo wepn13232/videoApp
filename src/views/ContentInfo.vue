@@ -83,8 +83,8 @@
                                         </van-col>
                                         <!--                                        按钮-->
                                         <van-col class="tag-btn">
-                                            <van-icon name="like-o" size="25px"></van-icon>
-                                            <van-icon name="chat-o" style="padding-left: 0.3rem" size="25px"></van-icon>
+                                            <van-icon name="like-o" size="23px" color="#A7B5BB"></van-icon>
+                                            <van-icon name="chat-o" style="padding-left: 0.3rem" size="23px" color="#A7B5BB"></van-icon>
                                         </van-col>
                                     </van-row>
                                     <!-- 查看人数-->
@@ -109,7 +109,6 @@
                 </div>
             </div>
         </div>
-        <br/>
         <br/>
         <br/>
 <!--        底部导航栏-->
