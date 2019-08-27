@@ -14,11 +14,17 @@ import { Image } from 'vant';
 import 'vant/lib/image/style';
 import { Button } from 'vant';
 import 'vant/lib/button/style';
+import { Tabbar, TabbarItem } from 'vant';
+import 'vant/lib/tabbar/style';
+import 'vant/lib/tabbar-item/style';
+
 
 
 
 Vue.use(Row).use(Col);
 Vue.use(NavBar);
+Vue.use(Tabbar);
+Vue.use(TabbarItem);
 Vue.use(Button);
 Vue.use(Image);
 Vue.use(Icon);

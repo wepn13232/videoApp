@@ -29,7 +29,7 @@
                             <van-col span="5" style="margin-right: 0.5rem">
                                 <div>
                                     <van-button round type="warning" size="mini" color="#FFC83D"
-                                                class="content-right-btn">立即查看
+                                                class="content-right-btn"  @click="toContent_info">立即查看
                                     </van-button>
                                 </div>
                             </van-col>
@@ -38,12 +38,17 @@
                 </div>
             </div>
         </div>
+        <br/>
+        <br/>
+        <!--        底部导航栏-->
+        <bottom-nav></bottom-nav>
     </div>
 </template>
 
 <script>
 
     import TopNav from "@/components/TopNav";
+    import BottomNav from "@/components/BottomNav";
 
     export default {
         beforeRouteEnter(to, from, next) {
@@ -55,10 +60,15 @@
             next()
         },
         name: 'home',
-        components: {TopNav},
+        components: {TopNav, BottomNav},
         data() {
             return {
                 title: '选择展会'
+            }
+        },
+        methods:{
+            toContent_info(){
+                this.$router.push('info')
             }
         }
     }
