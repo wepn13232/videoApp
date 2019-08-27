@@ -1,13 +1,15 @@
 <!--顶部导航-->
 <template>
-    <van-nav-bar
-            :title=this.title
-            left-arrow
-            @click-left="onClickLeft"
-            @click-right="onClickRight"
-    >
-        <van-icon name="search" slot="right"></van-icon>
-    </van-nav-bar>
+    <van-sticky>
+        <van-nav-bar
+                :title=this.title
+                left-arrow
+                @click-left="onClickLeft"
+                @click-right="onClickRight"
+        >
+            <van-icon name="search" slot="right"></van-icon>
+        </van-nav-bar>
+    </van-sticky>
 </template>
 
 <script>
@@ -15,7 +17,7 @@
         name: "TopNav",
         methods: {
             onClickLeft() {
-                //    跳转返回
+                this.$router.go(-1)
             },
             onClickRight() {
                 //    点击右边关闭

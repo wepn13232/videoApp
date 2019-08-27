@@ -1,0 +1,130 @@
+/*顶部图片*/
+.image-banner {
+    height: 203px;
+    width: 92%;
+    margin: 0.6rem auto;
+}
+
+.van-image__img {
+    border-radius: 8px;
+}
+
+.image-banner /deep/ .van-image /deep/ .van-image__img {
+    border-radius: 8px;
+}
+
+
+/*中间tab*/
+.Tab {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 0.6rem;
+    background-color: #ffffff;
+}
+
+.tab-box {
+    text-align: center;
+    background-color: aquamarine;
+    height: 100px;
+}
+
+.tab-box2 {
+    text-align: center;
+    background-color: antiquewhite;
+    height: 100px;
+}
+
+.tab-row {
+    position: relative;
+}
+
+.tab-font {
+    font-size: 11px;
+    color: #333333;
+}
+
+
+/*参展商板块*/
+.content-shop {
+    width: 100%;
+    background-color: #ffffff;
+    padding-top: 10px;
+}
+.shop{
+    margin-top: 10px;
+}
+
+.shop-title {
+    border-left: 3px #FFC83D solid;
+    padding-left: 0.4rem;
+    margin-left: 1rem;
+}
+
+.shop-lists {
+    margin-top: 10px;
+}
+
+.shop-pic {
+    margin-left: 35px;
+}
+
+.shop-pic /deep/ .van-image /deep/ .van-image__img {
+    border-radius: 3px;
+    width: 95px;
+    height: 66px;
+}
+
+.shop-content-info {
+    margin-left: 0.8rem;
+}
+
+.shop-info-title {
+    font-size: 15px;
+    color: #333333;
+}
+
+.shop-positionNum {
+    font-size: 12px;
+    color: #999999;
+}
+
+.tag-border-g {
+    border: #32C2B3 1px solid;
+}
+
+.tag-border-r {
+    border: #E7607B 1px solid;
+}
+
+.tag-border-p {
+    border: #7F6DE9 1px solid;
+}
+
+.shop-tag {
+    margin-top: 0.4rem;
+}
+
+.shop-tag /deep/ .van-tag {
+    padding: 0 .3rem;
+    margin-right: 0.3rem;
+}
+
+.tag-btn {
+    margin-top: .4rem;
+}
+
+.icon-font {
+    font-size: 12px;
+    color: #999999;
+    margin-left: 0.2rem;
+}
+
+#check-icon /deep/ .van-icon, .van-icon::before {
+    top: 0.2rem;
+}
+
+.border-line {
+    border-bottom: #E5E5E5 1px solid;
+    width: 93%;
+    margin: 0 auto;
+}

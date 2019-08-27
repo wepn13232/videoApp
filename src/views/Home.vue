@@ -7,7 +7,7 @@
         <div>
             <div class="box" v-for="(list,index) in 3" :key="index">
                 <!--                图片展示-->
-                <div>
+                <div class="banner-image">
                     <van-image
                             fit="cover"
                             height="203px"
@@ -96,6 +96,9 @@
         color: #999999;
         position: relative;
     }
+    .banner-image{
+        height: 203px;
+    }
     
     .content-right-btn {
         font-size: 11px;
@@ -107,5 +110,5 @@
     }
 </style>
 <style>
-    @import "../css/van-imageCss.css";
+    @import "../assets/css/Home.css";
 </style>
