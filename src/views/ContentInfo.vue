@@ -139,8 +139,6 @@
     }
 </script>
 
-<style scoped>
+<style lang="css">
     @import "../assets/css/ContenInfo.css";
-</style>
-<style>
 </style>

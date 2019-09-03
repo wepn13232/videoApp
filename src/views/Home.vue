@@ -7,7 +7,7 @@
         <div>
             <div class="box" v-for="(list,index) in 3" :key="index">
                 <!--                图片展示-->
-                <div class="banner-image">
+                <div class="banner-image" id="banner-image">
                     <van-image
                             fit="cover"
                             height="203px"

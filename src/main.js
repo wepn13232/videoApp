@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import App from './App.vue'
-import router from './router'
 import store from './store'
 import './registerServiceWorker'
 import { NavBar } from 'vant';
@@ -21,17 +20,28 @@ import { Sticky } from 'vant';
 import 'vant/lib/sticky/style';
 import { Tag } from 'vant';
 import 'vant/lib/tag/style';
+import router from './router'
+import AgoraRTM from "agora-rtm-sdk";
+import {Field} from "vant";
+import 'vant/lib/field/style';
+import { Cell, CellGroup } from 'vant';
+import 'vant/lib/cell/style';
+import 'vant/lib/cell-group/style';
+
 
 
 Vue.use(Row).use(Col);
 Vue.use(NavBar);
 Vue.use(Tag);
 Vue.use(Sticky);
+Vue.use(Cell).use(CellGroup);
 Vue.use(Tabbar);
 Vue.use(TabbarItem);
 Vue.use(Button);
 Vue.use(Image);
 Vue.use(Icon);
+Vue.use(Field);
+Vue.use(AgoraRTM);
 Vue.config.productionTip = false
 
 new Vue({

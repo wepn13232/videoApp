@@ -1,3 +1,5 @@
-.van-image__img{
-    border-radius: 8px 8px 0 0 ;
+.banner-image /deep/ .van-image__img {
+    border-radius: 8px 8px 0 0;
 }
+
+
