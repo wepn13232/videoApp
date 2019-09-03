@@ -92,6 +92,7 @@
                         //加入房间
                         clientV.join(null, 'MR1108E499220', null, function (uid) {
                             console.log("User " + uid + " join channel successfully");
+                            //显示左右转按钮和离开按钮、显示视频区域
                             _this.videoCheck = true
                             _this.videoOn = true;
                             //设置本地流参数
@@ -139,13 +140,11 @@
                     clientV.on('stream-subscribed', function (evt) {
                         var stream = evt.stream;
                         console.log("Subscribe remote stream successfully: " + stream.getId());
-                        // if ($('div#video #agora_remote'+stream.getId()).length === 0) {
-                        //   $('div#video').append('<div id="agora_remote'+stream.getId()+'" style="float:left; width:810px;height:607px;display:inline-block;"></div>');
-                        // }
                         stream.play('net');
                     });
                 })
             },
+            //向右转
             turnRight() {
                 client.sendMessageToPeer(
                     {text: '{"intent": "ctrl","common": "turnRight" }'}, // 符合 RtmMessage 接口的参数对象
@@ -162,6 +161,7 @@
                 });
             }
             ,
+            //向左转
             turnLeft() {
                 client.sendMessageToPeer(
                     {text: '{"intent": "ctrl","common": "turnLeft" }'}, // 符合 RtmMessage 接口的参数对象
@@ -177,6 +177,7 @@
                     /* 发送失败的处理逻辑 */
                 });
             },
+            //离开房间
             leave() {
                 let _this = this
                 //初始化客户端
@@ -192,6 +193,7 @@
             },
         },
         mounted() {
+            //默认自动登录
             this.loginAg()
         },
     }
