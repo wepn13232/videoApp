@@ -89,6 +89,7 @@
                     //    初始化视频客户端
                     clientV.init('e66554444b3846cc901eaee5a12dfb69', function () {
                         console.log("AgoraRTC client 初始化完成");
+                        //加入房间
                         clientV.join(null, 'MR1108E499220', null, function (uid) {
                             console.log("User " + uid + " join channel successfully");
                             _this.videoCheck = true
